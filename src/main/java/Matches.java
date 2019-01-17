@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 public class Matches {
     public static int matches(int n) {
         if (n == 0) return 0;
-        if (n <11 0) throw new IllegalArgumentException("Input should be a positive integer");
+        if (n < 0) throw new IllegalArgumentException("Input should be a positive integer");
 
         //to minimise amount of matches, we need to build a rectangle with shape as close as possible to a square
         //then, one of the sides of rectangle will be equal a square root of n
