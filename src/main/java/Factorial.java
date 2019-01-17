@@ -12,7 +12,7 @@ public class Factorial {
             result *= k;
             if (result == n) {
                 return k;
-            } else if (result <= 0) throw new IllegalArgumentException();
+            } else if (result <= 0) throw new IllegalArgumentException(n + " is not valid factorial value");
         }
     }
 
